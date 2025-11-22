@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hand Page-Crumple Animation Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Everything that "crumples" lives in page-shell -->
+  <div class="page-shell">
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <h1>Hand Page-Crumple Animation</h1>
+          <p>
+            Demo of the contact-button interaction from my personal site.
+            Click the button below to see the hand grab the page and scroll to the contact section.
+          </p>
+          <a href="#contact" class="btn" id="contact-trigger">
+            Contact me
+          </a>
+        </div>
+      </section>
+
+      <section class="spacer">
+        <p>Scroll space so the animation has somewhere to move the page.</p>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Contact section</h2>
+        <p>This is the target of <code>scrollIntoView</code> after the hand animation.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2025 Vincent Feng</p>
+    </footer>
+  </div>
+
+  <!-- Hand overlay -->
+  <div class="hand-cta" aria-hidden="true">
+    <div class="hand-graphic"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
